@@ -142,3 +142,14 @@ body {
 .hidden {
   display: none;
 }
+.winner{
+  position: absolute;
+  width: 100rem;
+  height: 60rem;
+  background: #00000090;
+  display: none;
+  place-items: center;
+  color: white;
+  font-size: 80px;
+
+}
