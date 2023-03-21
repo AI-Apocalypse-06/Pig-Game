@@ -62,6 +62,18 @@ btnHold.addEventListener("click", () => {
     temp2.textContent = "0";
     currentScore = 0;
   }
+  if (sum1.textContent >= 10) {
+    player0.style.background = "#222";
+    document.getElementById("player-0").style.color = "#c7365f";
+    player0.classList.add("player-active");
+    player1.classList.remove("player-active");
+  }
+  if (sum2.textContent >= 10) {
+    player1.style.background = "#222";
+    document.getElementById("player-1").style.color = "#c7365f";
+    player1.classList.add("player-active");
+    player0.classList.remove("player-active");
+  }
 });
 
 btnNew.addEventListener("click", () => {
