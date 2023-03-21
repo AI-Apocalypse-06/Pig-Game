@@ -8,6 +8,7 @@ const player1 = document.querySelector(".player-1");
 const player0 = document.querySelector(".player-0");
 const btnNew = document.querySelector(".btn-new");
 const btnHold = document.querySelector(".btn-hold");
+const winner = document.querySelector(".winner");
 
 let currentScore = 0;
 let sum = sum1;
@@ -62,17 +63,15 @@ btnHold.addEventListener("click", () => {
     temp2.textContent = "0";
     currentScore = 0;
   }
-  if (sum1.textContent >= 10) {
-    player0.style.background = "#222";
-    document.getElementById("player-0").style.color = "#c7365f";
-    player0.classList.add("player-active");
-    player1.classList.remove("player-active");
+  if (sum1.textContent >= 100) {
+    winner.innerText = "🏆 Player 1 🏆";
+    winner.style.display = "grid";
+    btnNew.style.zIndex = "1";
   }
-  if (sum2.textContent >= 10) {
-    player1.style.background = "#222";
-    document.getElementById("player-1").style.color = "#c7365f";
-    player1.classList.add("player-active");
-    player0.classList.remove("player-active");
+  if (sum2.textContent >= 100) {
+    winner.innerText = "🏆 Player 2 🏆";
+    winner.style.display = "grid";
+    btnNew.style.zIndex = "1";
   }
 });
 
