@@ -23,7 +23,6 @@ roll.addEventListener("click", function () {
   if (randomNum !== 1) {
     currentScore += randomNum;
     temp.innerText = currentScore;
-    // result += currentScore;
   } else if (randomNum === 1) {
     currentScore = 0;
     temp.innerText = currentScore;
