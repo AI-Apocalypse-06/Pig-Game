@@ -63,12 +63,12 @@ btnHold.addEventListener("click", () => {
     currentScore = 0;
   }
   if (sum1.textContent >= 100) {
-    winner.innerText = "🏆 Player 1 🏆";
+    winner.innerText = "🏆 Player 1 Wins 🏆";
     winner.style.display = "grid";
     btnNew.style.zIndex = "1";
   }
   if (sum2.textContent >= 100) {
-    winner.innerText = "🏆 Player 2 🏆";
+    winner.innerText = "🏆 Player 2 Wins 🏆";
     winner.style.display = "grid";
     btnNew.style.zIndex = "1";
   }
